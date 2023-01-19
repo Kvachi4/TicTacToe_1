@@ -13,6 +13,10 @@ namespace TicTacToe_1
             Console.Title = "TicTacToe - Game";
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("\t\t\t   Welcome to The TicTacToe Game");
+            Console.WriteLine("\t\t\t   ----------------------------- \n\n");
+            Console.Write("Please Enter Yor Name : ");
         }
     }
 }

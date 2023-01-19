@@ -10,12 +10,25 @@ namespace TicTacToe_1
     {
         static void Main(string[] args)
         {
+            DateTime start = DateTime.Now;
+
             MyConsole.ModifyConsole();
-            Intro.introMessage();
+            Intro.PlayersInfo(); 
             TicTacToe.PlayGame();
-            
+            GameResults.GetScore();
 
+            DateTime end = DateTime.Now;
 
+            Console.WriteLine($" You Start Game At: {start.ToLongTimeString()} O\'Clock");
+            Console.WriteLine($"   You End Game At: {end.ToLongTimeString()} O\'Clock");
+
+            var totalTime = end - start;
+            Console.WriteLine($"\t\t\t Game Duration Was: {totalTime.Seconds} Second");
+            Console.WriteLine(" ---------------------------------------------------------------------- \n");
+            Console.WriteLine("\t\t\t\t\t Game Over ");
+
+            Console.ReadKey();
+       
         }
 
 
